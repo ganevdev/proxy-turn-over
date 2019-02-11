@@ -19,7 +19,7 @@ const proxyTurnOver = require('proxy-turn-over')
 proxyTurnOver('https://superLogin:superPassword@123.123.2.42:8080')
 
 // return this:
-// 'https://123.123.2.42:8080@superLogin:superPassword'
+'https://123.123.2.42:8080@superLogin:superPassword'
 ```
 
 login:password first (need a second argument - 'loginPass'):
@@ -29,5 +29,29 @@ const proxyTurnOver = require('proxy-turn-over')
 proxyTurnOver('123.123.2.42:8080@superLogin:superPassword', 'loginPass')
 
 // return this:
-// 'superLogin:superPassword@123.123.2.42:8080'
+'superLogin:superPassword@123.123.2.42:8080'
+```
+
+Expand proxy array so that login and password always follow @
+
+```{js}
+const proxyTurnOver = require('proxy-turn-over')
+const proxyArray = [
+  '123.123.2.42:8080@superLogin:superPassword', 
+  'https://superLogin:superPassword@123.123.2.42:8080', 
+  '123.123.2.42:8080', 
+  'superLogin:superPassword@123.123.2.42:9999', 
+  'login:pass@123.123.2.42:000'
+]
+
+const newProxyArray = proxyArray.map(proxy => {
+  return proxyTurnOver(proxy)
+})
+
+// return this:
+[ '123.123.2.42:8080@superLogin:superPassword',
+  'https://123.123.2.42:8080@superLogin:superPassword',
+  '123.123.2.42:8080',
+  '123.123.2.42:9999@superLogin:superPassword',
+  '123.123.2.42:000@login:pass' ]
 ```
