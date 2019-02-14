@@ -6,6 +6,8 @@
 Flip ip address and login:password in private proxy.
 If there is a protocol, it will always be at the beginning.
 
+This library relies heavily on [split-proxy](https://github.com/Ganevru/split-proxy)
+
 ```bash
 npm i proxy-turn-over
 ```
