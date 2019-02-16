@@ -27,7 +27,7 @@
     "pretty": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\""
   },
   "dependencies": {
-    "split-proxy": "^1.0.2"
+    "split-proxy": "^1.0.3"
   },
   "devDependencies": {
     "@types/node": "^10.12.24",
