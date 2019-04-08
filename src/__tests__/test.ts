@@ -1,5 +1,7 @@
 import proxyTurnOver from '../index';
 
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+
 describe('ipPort', () => {
   test('protocol://l:p@ip:port', () => {
     expect(
