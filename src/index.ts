@@ -36,14 +36,14 @@ function proxyTurnOver(
         ':' +
         splitProxy(proxy).password +
         '@' +
-        splitProxy(proxy).ipAddress +
+        splitProxy(proxy).host +
         ':' +
         splitProxy(proxy).port
       );
     } else {
       return (
         protocol(proxy) +
-        splitProxy(proxy).ipAddress +
+        splitProxy(proxy).host +
         ':' +
         splitProxy(proxy).port +
         '@' +

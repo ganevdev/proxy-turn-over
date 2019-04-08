@@ -1,6 +1,6 @@
 {
   "name": "proxy-turn-over",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Flip ip address and login:password in proxy.",
   "keywords": [
     "proxy"
@@ -27,7 +27,7 @@
     "pretty": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\""
   },
   "dependencies": {
-    "split-proxy": "^1.0.3"
+    "split-proxy": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^10.12.24",
