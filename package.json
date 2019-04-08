@@ -1,7 +1,7 @@
 {
   "name": "proxy-turn-over",
-  "version": "1.0.4",
-  "description": "Flip ip address and login:password in proxy.",
+  "version": "1.0.5",
+  "description": "Flip host:port and login:password in proxy.",
   "keywords": [
     "proxy"
   ],

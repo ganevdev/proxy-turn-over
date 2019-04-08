@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/Ganevru/proxy-turn-over.svg?branch=master)](https://travis-ci.com/Ganevru/proxy-turn-over)
 [![npm](https://img.shields.io/npm/v/proxy-turn-over.svg?style=flat-square)](http://npm.im/proxy-turn-over)
 
-Flip ip address and login:password in private proxy (proxy with login and password).
+Flip host:port and login:password in private proxy (proxy with login and password).
 If there is a protocol, it will always be at the beginning.
 
 This library relies heavily on [split-proxy](https://github.com/Ganevru/split-proxy)
@@ -14,7 +14,7 @@ npm i proxy-turn-over
 
 Examples:
 
-ipAddress:port first (default):
+host:port first (default):
 
 ```javascript
 const proxyTurnOver = require('proxy-turn-over');
